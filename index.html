@@ -6,54 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> || Acedonut Animation || </title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+
 </head>
 
 <body>
-  <div class="container">
-    <div class="slide__container">
-      <div class="slide__item_card">
-        <div class="slide__item_card__top">
-          <h1 class="title">ACEDONUT</h1>
-          <h2 class="sub_title">SPRING SEASON NEW PROMOTION</h2>
-          <p class="item_description">Our story began in the 1930's, we make the iconic donuts. We are made daily and so
-            you'll always know when we're serving fresh.</p>
-          <span class="item_price">9,900원</span>
-          <img class="item_image" src="" alt="">
+  <div class="container"> <!--  -->
+    <div class="slide__container"> <!-- card-wrapper -->
+      <div class="slide__item_card"> <!-- card -->
+        <div class="slide__item_card__top"> <!-- card-top -->
+          <img class="title" src="./img/acedonut_logo.png" alt="logo"> <!-- logo -->
+          <div class="intro_text"> <!-- brand-text -->
+            <h1 class="sub_title">SPRING SEASON NEW PROMOTION</h1>
+            <p class="item_description">Our story began in the 1930's, we make the iconic donuts. We are made daily and
+              so
+              you'll always know when we're serving fresh.</p>
+            <span class="item_price">9,900원</span>
+          </div>
+          <img class="origin_image item_image" src="./img/original.png" alt="item_image1">
+          <img class="choco_image item_image" src="./img/chocolate.png" alt="item_image2">
+          <img class="straw_image item_image" src="./img/strawberry.png" alt="item_image3">
+
         </div>
-        <div class="slide__item_card__bottom">
-          <div class="flavours__container">
-            <h3 class="title">FLAVOURS</h3>
+        <div class="slide__item_card__bottom"> <!-- card-bottom -->
+          <div class="flavours__container"> <!-- flavours -->
+            <h2 class="title">FLAVOURS</h2>
             <div class="flavours">
-              <a href="#">Original</a>
-              <a href="#">Strawberry</a>
-              <a href="#">Chocolate</a>
+              <button class="original" href="#">Original</button>
+              <button class="chocolate" href="#">Chocolate</button>
+              <button class="strawberry" href="#">Strawberry</button>
             </div>
           </div>
           <div class="ingredients__container">
-            <h3 class="title">INGREDIENTS</h3>
-            <div class="ingredients">
-              <div class="sugar__wrapper">
+            <h2 class="title">INGREDIENTS</h2>
+            <div class="ingredients"> <!-- igd-details -->
+              <div class="sugar__wrapper"> <!--igd-tag igd-sugar-->
                 <span>Sugar</span>
                 <b>5%</b>
               </div>
-              <div class="salt__wrapper">
+              <div class="salt__wrapper"> <!--igd-tag igd-salt-->
                 <span>Salt</span>
-                <b>5%</b>
+                <b>2%</b>
               </div>
-              <div class="fat__wrapper">
+              <div class="fat__wrapper"> <!--igd-tag igd-fat-->
                 <span>Fat</span>
-                <b>5%</b>
+                <b>8%</b>
               </div>
-              <div class="energy__wrapper">
+              <div class="energy__wrapper"> <!--igd-tag igd-energy-->
                 <span>Energy</span>
-                <b>5%</b>
+                <b>22%</b>
               </div>
             </div>
           </div>
-          <div class="details__container">
+          <div class="details__container"> <!--details-->
             <h3 class="title">DETAILS</h3>
-            <p class="details">We took our classic ring donut, dipped it in truffle, topped it with chocolate buttons.
-              It's time you said YES.</p>
+            <p class="details"></p>
           </div>
         </div>
       </div>
