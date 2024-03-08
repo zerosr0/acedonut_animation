@@ -10,8 +10,12 @@ const details = document.querySelector('.details__container .details');
 const imgOrgin = document.querySelector('.origin_image');
 const imgStraw = document.querySelector('.straw_image');
 const imgChoco = document.querySelector('.choco_image');
+const bodyBg = document.querySelector('body');
+let itemPrice = document.querySelector('.item_price');
+
 
 original.addEventListener("click", () => {
+  bodyBg.style.background = 'var(--bg-body-origin)';
   cardTop.style.background = 'var(--bg-origin)';
   original.style.background = 'var(--bg-origin)';
   strawberry.style.background = 'none';
@@ -21,12 +25,17 @@ original.addEventListener("click", () => {
   igdFat.innerHTML = '6%';
   igdEnergy.innerHTML = '30%';
   details.innerHTML = "We've perfected this recipe so every time you bite into it, the tasting is more than just a donut - it's pure joy.";
-  imgOrgin.style.left = '35rem';
+  imgOrgin.style.left = '30rem';
   imgStraw.style.left = '-60rem';
   imgChoco.style.left = '-60rem';
+  itemPrice.innerHTML = '1,200원';
+  itemPrice.style.background = 'var(--bg-price-origin)';
+
+
 })
 
 chocolate.addEventListener('click', () => {
+  bodyBg.style.background = 'var(--bg-body-choco)';
   cardTop.style.background = 'var(--bg-choco)';
   chocolate.style.background = 'var(--bg-choco)';
   original.style.background = 'none';
@@ -38,10 +47,13 @@ chocolate.addEventListener('click', () => {
   details.innerHTML = "We took our classic ring donut, dipped it in truffle, topped it with chocolate buttons. It's time you said YES.";
   imgOrgin.style.left = '-60rem';
   imgStraw.style.left = '-60rem';
-  imgChoco.style.left = '35rem';
+  imgChoco.style.left = '30rem';
+  itemPrice.innerHTML = '2,500원';
+  itemPrice.style.background = 'var(--bg-price-choco)';
 });
 
 strawberry.addEventListener("click", () => {
+  bodyBg.style.background = 'var(--bg-body-straw)';
   cardTop.style.background = 'var(--bg-straw)';
   strawberry.style.background = 'var(--bg-straw)';
   original.style.background = 'none';
@@ -52,8 +64,10 @@ strawberry.addEventListener("click", () => {
   igdEnergy.innerHTML = '28%';
   details.innerHTML = "We've taken our Original Donut, hand-dipped it in a strawberry truffle and topped it with fun rainbow sprinkles!";
   imgOrgin.style.left = '-60rem';
-  imgStraw.style.left = '35rem';
+  imgStraw.style.left = '30rem';
   imgChoco.style.left = '-60rem';
+  itemPrice.innerHTML = '2,400원';
+  itemPrice.style.background = 'var(--bg-price-straw)';
 })
 
 
